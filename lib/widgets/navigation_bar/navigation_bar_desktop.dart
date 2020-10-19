@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gtech_site/routing/route_names.dart';
-import 'navbar_item.dart';
-import 'navbar_logo.dart';
+import 'package:gtech_site/widgets/navigation_bar/navbar_item.dart';
+import 'package:gtech_site/widgets/navigation_bar/navbar_logo.dart';
 
 class NavigationBarDesktop extends StatelessWidget {
   @override

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:gtech_site/locator.dart';
 import 'package:gtech_site/services/navigation_service.dart';
-import 'package:provider/provider.dart';
-import '../../locator.dart';
-import '../page_state_notifier.dart';
 
 class DrawerItem extends StatelessWidget {
   final String title;

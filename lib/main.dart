@@ -20,6 +20,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      navigatorKey: locator<NavigationService>().navigatorKey,
       title: 'GTech',
       theme: ThemeData(
         primarySwatch: Colors.purple,
@@ -27,7 +28,7 @@ class _MyAppState extends State<MyApp> {
       builder: (context, child) => MainView(
         child: child,
       ),
-      key: locator<NavigationService>().navigatorKey,
+      //key: locator<NavigationService>().navigatorKey,
       onGenerateRoute: generateRoute,
       initialRoute: HomeRoute,
     );
