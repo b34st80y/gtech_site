@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gtech_site/routing/route_names.dart';
 import 'package:gtech_site/widgets/navigation_drawer/drawer_item.dart';
 import 'package:gtech_site/widgets/navigation_drawer/navigation_drawer_header.dart';
 
@@ -9,16 +10,14 @@ class NavigationDrawer extends StatelessWidget {
       width: 300,
       decoration: BoxDecoration(
         color: Colors.white,
-        boxShadow: [
-          BoxShadow(color: Colors.black, blurRadius: 16)
-        ],
+        boxShadow: [BoxShadow(color: Colors.black, blurRadius: 16)],
       ),
       child: Column(
         children: [
           NavigationDrawerHeader(),
-          DrawerItem("Services", Icons.all_inclusive, 1),
-          DrawerItem("Locations", Icons.location_on, 2),
-          DrawerItem("About Us", Icons.people, 3),
+          DrawerItem("Services", Icons.all_inclusive, ServicesRoute),
+          DrawerItem("Locations", Icons.location_on, LocationsRoute),
+          DrawerItem("About Us", Icons.people, AboutRoute),
         ],
       ),
     );

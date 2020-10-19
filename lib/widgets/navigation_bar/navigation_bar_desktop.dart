@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gtech_site/routing/route_names.dart';
 import 'navbar_item.dart';
 import 'navbar_logo.dart';
 
@@ -15,15 +16,15 @@ class NavigationBarDesktop extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             mainAxisSize: MainAxisSize.min,
             children: [
-              NavBarItem("Services", 1),
+              NavBarItem("Services", ServicesRoute),
               VerticalDivider(),
-              NavBarItem("Locations", 2),
+              NavBarItem("Locations", LocationsRoute),
               VerticalDivider(),
-              NavBarItem("About Us", 3),
+              NavBarItem("About Us", AboutRoute),
             ],
           )
         ],
       ),
-    );;
+    );
   }
 }

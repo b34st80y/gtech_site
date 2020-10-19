@@ -5,16 +5,18 @@ import 'package:gtech_site/widgets/intro_view/intro_view.dart';
 class HomeContentMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisSize: MainAxisSize.max,
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        HookImage(),
-        SizedBox(
-          height: 20,
-        ),
-        IntroView(),
-      ],
+    return SingleChildScrollView(
+      child: Column(
+        mainAxisSize: MainAxisSize.max,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          HookImage(),
+          SizedBox(
+            height: 20,
+          ),
+          IntroView(),
+        ],
+      ),
     );
   }
 }

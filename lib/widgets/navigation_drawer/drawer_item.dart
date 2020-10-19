@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:gtech_site/services/navigation_service.dart';
 import 'package:provider/provider.dart';
-
+import '../../locator.dart';
 import '../page_state_notifier.dart';
 
 class DrawerItem extends StatelessWidget {
   final String title;
   final IconData icon;
-  final int pageNav;
+  final String navPath;
 
-  const DrawerItem(this.title, this.icon, this.pageNav);
+  const DrawerItem(this.title, this.icon, this.navPath);
 
   @override
   Widget build(BuildContext context) {
-    PageStateNotifier _pageState = Provider.of<PageStateNotifier>(context);
     return Padding(
       padding: const EdgeInsets.only(
         left: 30,
@@ -30,7 +30,7 @@ class DrawerItem extends StatelessWidget {
               style: TextStyle(fontSize: 18),
             ),
             onPressed: () {
-              _pageState.newPage(pageNav);
+              locator<NavigationService>().navigateTo(navPath);
               Navigator.of(context).pop();
             },
           ),

@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:gtech_site/widgets/page_state_notifier.dart';
+import 'package:gtech_site/locator.dart';
+import 'package:gtech_site/routing/route_names.dart';
+import 'package:gtech_site/routing/router.dart';
+import 'package:gtech_site/services/navigation_service.dart';
 import 'package:gtech_site/views/main/main_view.dart';
-import 'package:provider/provider.dart';
 
 void main() {
+  setupLocator();
   runApp(MyApp());
 }
 
@@ -21,8 +24,12 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(
         primarySwatch: Colors.purple,
       ),
-      home: ChangeNotifierProvider<PageStateNotifier>(
-          create: (_) => PageStateNotifier(), child: MainView()),
+      builder: (context, child) => MainView(
+        child: child,
+      ),
+      key: locator<NavigationService>().navigatorKey,
+      onGenerateRoute: generateRoute,
+      initialRoute: HomeRoute,
     );
   }
 }
