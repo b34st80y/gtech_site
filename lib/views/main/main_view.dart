@@ -12,13 +12,11 @@ class MainView extends StatelessWidget {
   Widget build(BuildContext context) {
     return ResponsiveBuilder(builder: (context, sizeInfo) {
       return Scaffold(
+        backgroundColor: Colors.white,
         drawer: sizeInfo.isMobile ? NavigationDrawer() : null,
         body: Column(
           children: [
             NavigationBar(),
-            SizedBox(
-              height: 20,
-            ),
             Expanded(
               child: child,
             )

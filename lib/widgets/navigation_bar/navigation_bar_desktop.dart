@@ -6,12 +6,16 @@ import 'package:gtech_site/widgets/navigation_bar/navbar_logo.dart';
 class NavigationBarDesktop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(vertical: 12, horizontal: 50),
-      child: Container(
-        height: 75,
+    return Container(
+      height: 100,
+      decoration: BoxDecoration(
+          gradient:
+              LinearGradient(colors: [Colors.purple, Colors.deepPurple[800]])),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 50),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             NavBarLogo(),
             Row(

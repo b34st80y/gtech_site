@@ -15,7 +15,7 @@ class NavBarItem extends StatelessWidget {
     return TextButton(
       child: Text(
         title,
-        style: TextStyle(fontSize: 18),
+        style: TextStyle(fontSize: 18, color: Colors.white),
       ),
       onPressed: () {
         navigator.navigateTo(navPath);
