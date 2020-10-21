@@ -4,8 +4,8 @@ class HookImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Image.asset(
-      'assets/images/placeholder.png',
-      fit: BoxFit.fill,
+      'images/services/software_dev/dev3.jpg',
+      fit: BoxFit.cover,
     );
   }
 }
