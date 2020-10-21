@@ -16,9 +16,6 @@ class MainView extends StatelessWidget {
         body: Column(
           children: [
             NavigationBar(),
-            SizedBox(
-              height: 20,
-            ),
             Expanded(
               child: child,
             )
