@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gtech_site/widgets/service_tile/service_tile.dart';
+import 'package:gtech_site/widgets/services_header/services_header.dart';
 
 class ServicesView extends StatelessWidget {
   @override
@@ -7,7 +8,7 @@ class ServicesView extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
-          //ServicesHeader(),
+          ServicesHeader(),
           ServiceTile(
             title: "Software Development",
             desc:
@@ -19,7 +20,7 @@ class ServicesView extends StatelessWidget {
           ServiceTile(
             title: "Home IT Services",
             desc:
-                "Ever wanted to make your lights turn on with a clap? WE can help you do all this and more! So easy! "
+                "Ever wanted to make your lights turn on with a clap? We can help you do all this and more! So easy! "
                 "Smart home configuration, appliance upgrade, zoom studio. You name it, we got it!",
             colors: [Colors.red, Colors.redAccent],
             imagePath: "assets/images/placeholder.png",
@@ -36,8 +37,8 @@ class ServicesView extends StatelessWidget {
           ServiceTile(
             title: "PC & Mobile Device Repair / Maintenance",
             desc:
-                "Our Software Development team can help you create software that can help you out a whole lot!  "
-                "We build apps, websites, and more personal custom software!",
+                "Our top of the line repair technicians can fix almost anything!  Phones, tablets, "
+                    "laptops, PCs or any other electronics; if we cant fix it, you don't pay a dime! ",
             colors: [Colors.purple, Colors.purpleAccent],
             imagePath: "assets/images/placeholder.png",
             reversed: true,
