@@ -13,21 +13,16 @@ class MainView extends StatelessWidget {
     return ResponsiveBuilder(builder: (context, sizeInfo) {
       return Scaffold(
         drawer: sizeInfo.isMobile ? NavigationDrawer() : null,
-        body: Padding(
-          padding: sizeInfo.isMobile
-              ? const EdgeInsets.all(12)
-              : const EdgeInsets.all(50.0),
-          child: Column(
-            children: [
-              NavigationBar(),
-              SizedBox(
-                height: 20,
-              ),
-              Expanded(
-                child: child,
-              )
-            ],
-          ),
+        body: Column(
+          children: [
+            NavigationBar(),
+            SizedBox(
+              height: 20,
+            ),
+            Expanded(
+              child: child,
+            )
+          ],
         ),
       );
     });

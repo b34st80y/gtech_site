@@ -13,12 +13,9 @@ class NavBarLogo extends StatelessWidget {
         navigator.navigateTo(HomeRoute);
       },
       child: SizedBox(
-        height: 80,
+        height: 75,
         width: 150,
-        child: Text(
-          "GTech Logo",
-          style: TextStyle(fontSize: 32),
-        ),
+        child: Image.asset('assets/images/logo.jpg', fit: BoxFit.cover,)
       ),
     );
   }
