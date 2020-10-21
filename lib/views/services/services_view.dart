@@ -15,7 +15,7 @@ class ServicesView extends StatelessWidget {
                 "Our Software Development team can help you create software that can help you out a whole lot!  "
                 "We build apps, websites, and other personal custom software!",
             colors: [Colors.blue, Colors.blueAccent],
-            imagePath: "images/services/software_dev/dev2.jpg",
+            imagePath: "assets/images/services/software_dev/dev2.jpg",
           ),
           ServiceTile(
             title: "Home IT Services",
@@ -23,7 +23,7 @@ class ServicesView extends StatelessWidget {
                 "Ever wanted to make your lights turn on with a clap? We can help you do all this and more! So easy! "
                 "Smart home configuration, appliance upgrade, zoom studio. You name it, we got it!",
             colors: [Colors.red, Colors.redAccent],
-            imagePath: "images/services/smart_home/smart_home1.jpg",
+            imagePath: "assets/images/services/smart_home/smart_home1.jpg",
             reversed: true,
           ),
           ServiceTile(
@@ -32,7 +32,7 @@ class ServicesView extends StatelessWidget {
                 "We can help you upgrade you business with faster, more reliable machines, security cameras, "
                 "and even 24/7 customer service for any technology needs!",
             colors: [Colors.green, Colors.greenAccent],
-            imagePath: "images/services/business/business1.jpg",
+            imagePath: "assets/images/services/business/business1.jpg",
           ),
           ServiceTile(
             title: "PC & Mobile Device Repair / Maintenance",
@@ -40,7 +40,7 @@ class ServicesView extends StatelessWidget {
                 "Our top of the line repair technicians can fix almost anything!  Phones, tablets, "
                     "laptops, PCs or any other electronics; if we cant fix it, you don't pay a dime! ",
             colors: [Colors.purple, Colors.purpleAccent],
-            imagePath: "images/services/repair/repair1.jpg",
+            imagePath: "assets/images/services/repair/repair1.jpg",
             reversed: true,
           ),
           ServiceTile(
@@ -50,7 +50,7 @@ class ServicesView extends StatelessWidget {
                 "Or maybe you aren't sure if the software you want is even possible? "
                 "Let us help! Free consultations are always available.",
             colors: [Colors.orange, Colors.orangeAccent],
-            imagePath: "images/services/consulting/consulting1.jpg",
+            imagePath: "assets/images/services/consulting/consulting1.jpg",
           ),
         ],
       ),

@@ -8,7 +8,7 @@ class ServicesHeader extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage("images/services/software_dev/dev4.jpg"),
+          image: AssetImage("assets/images/services/software_dev/dev4.jpg"),
           fit: BoxFit.cover,
           colorFilter: ColorFilter.mode(
               Colors.black.withOpacity(0.6), BlendMode.darken),
