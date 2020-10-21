@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gtech_site/locator.dart';
 import 'package:gtech_site/services/navigation_service.dart';
+import 'package:provider/provider.dart';
 
 class NavBarItem extends StatelessWidget {
   final String title;
@@ -10,13 +10,15 @@ class NavBarItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    NavigationService navigator = Provider.of<NavigationService>(context);
+
     return TextButton(
       child: Text(
         title,
         style: TextStyle(fontSize: 18),
       ),
       onPressed: () {
-        locator<NavigationService>().navigateTo(navPath);
+        navigator.navigateTo(navPath);
       },
     );
   }
