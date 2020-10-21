@@ -13,10 +13,12 @@ class NavBarLogo extends StatelessWidget {
         navigator.navigateTo(HomeRoute);
       },
       child: SizedBox(
-        height: 75,
-        width: 150,
-        child: Image.asset('assets/images/logo.jpg', fit: BoxFit.cover,)
-      ),
+          height: 75,
+          width: 150,
+          child: Image.asset(
+            'assets/images/logo.jpg',
+            fit: BoxFit.cover,
+          )),
     );
   }
 }

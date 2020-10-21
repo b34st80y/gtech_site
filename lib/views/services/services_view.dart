@@ -38,7 +38,7 @@ class ServicesView extends StatelessWidget {
             title: "PC & Mobile Device Repair / Maintenance",
             desc:
                 "Our top of the line repair technicians can fix almost anything!  Phones, tablets, "
-                    "laptops, PCs or any other electronics; if we cant fix it, you don't pay a dime! ",
+                "laptops, PCs or any other electronics; if we cant fix it, you don't pay a dime! ",
             colors: [Colors.purple, Colors.purpleAccent],
             imagePath: "assets/images/services/repair/repair1.jpg",
             reversed: true,

@@ -10,8 +10,8 @@ class ServicesHeader extends StatelessWidget {
         image: DecorationImage(
           image: AssetImage("assets/images/services/software_dev/dev4.jpg"),
           fit: BoxFit.cover,
-          colorFilter: ColorFilter.mode(
-              Colors.black.withOpacity(0.6), BlendMode.darken),
+          colorFilter:
+              ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.darken),
         ),
       ),
       child: Column(
