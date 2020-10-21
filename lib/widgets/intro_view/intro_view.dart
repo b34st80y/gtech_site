@@ -7,7 +7,11 @@ class IntroView extends StatelessWidget {
   Widget build(BuildContext context) {
     return ResponsiveBuilder(builder: (context, sizeInfo) {
       var textAlignment = sizeInfo.isMobile ? TextAlign.center : TextAlign.left;
-      double titleSize = sizeInfo.isMobile ? 50 : 80;
+      double titleSize = sizeInfo.isMobile
+          ? 50
+          : sizeInfo.isTablet
+              ? 65
+              : 80;
       double descSize = sizeInfo.isMobile ? 16 : 21;
       double padding = sizeInfo.isMobile ? 8 : 18;
 

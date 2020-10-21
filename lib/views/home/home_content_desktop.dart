@@ -6,19 +6,22 @@ class HomeContentDesktop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        mainAxisSize: MainAxisSize.max,
-        children: [
-          ConstrainedBox(
-              constraints: BoxConstraints(
-                  maxWidth: MediaQuery.of(context).size.width / 2 - 75),
-              child: IntroView()),
-          ConstrainedBox(
-              constraints: BoxConstraints(
-                  maxWidth: MediaQuery.of(context).size.width / 2 - 75),
-              child: HookImage()),
-        ],
+      child: Container(
+        height: 800,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Flexible(
+              flex: 1,
+              child: IntroView(),
+            ),
+            Flexible(
+              flex: 1,
+              child: Container(
+                  child: HookImage()),
+            ),
+          ],
+        ),
       ),
     );
   }
