@@ -30,8 +30,8 @@ class DrawerItem extends StatelessWidget {
               style: TextStyle(fontSize: 18),
             ),
             onPressed: () {
+              Scaffold.of(context).openEndDrawer();
               navigator.navigateTo(navPath);
-              navigator.goBack();
             },
           ),
         ],
