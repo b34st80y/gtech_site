@@ -21,14 +21,14 @@ Route<dynamic> generateRoute(RouteSettings settings) {
 }
 
 PageRoute _getPageRoute(Widget child, RouteSettings settings) {
-  return _FadeRoute(child: child, routeName: settings.name);
+  return _CustomRoute(child: child, routeName: settings.name);
 }
 
-class _FadeRoute extends PageRouteBuilder {
+class _CustomRoute extends PageRouteBuilder {
   final Widget child;
   final String routeName;
 
-  _FadeRoute({this.child, this.routeName})
+  _CustomRoute({this.child, this.routeName})
       : super(
           settings: RouteSettings(name: routeName),
           pageBuilder: (
@@ -43,9 +43,6 @@ class _FadeRoute extends PageRouteBuilder {
             Animation<double> secondaryAnimation,
             Widget child,
           ) =>
-              FadeTransition(
-            opacity: animation,
-            child: child,
-          ),
+              child,
         );
 }
