@@ -4,8 +4,11 @@ import 'package:gtech_site/routing/router.dart';
 import 'package:gtech_site/services/navigation_service.dart';
 import 'package:gtech_site/views/main/main_view.dart';
 import 'package:provider/provider.dart';
+import 'configure_nonweb.dart' if (dart.library.html) 'configure_web.dart';
 
 void main() {
+  // custom URL strategy only available on beta channel
+  configureApp();
   runApp(Provider<NavigationService>.value(
     value: NavigationService(),
     child: MyApp(),
