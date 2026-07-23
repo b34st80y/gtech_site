@@ -14,3 +14,6 @@ coverage/
 
 # Local Codex configuration
 .codex/
+
+# Firebase deployment cache
+.firebase/
