@@ -1,16 +1,20 @@
-# gtech_site
+# GTech website
 
-Website for GTech (working title)
+The GTech product and services website, built with React, TypeScript, Vite, and Tailwind CSS.
 
-## Getting Started
+## Local development
 
-This project is a starting point for a Flutter application.
+```bash
+npm install
+npm run dev
+```
 
-A few resources to get you started if this is your first Flutter project:
+## Quality checks
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+```bash
+npm test
+npm run lint
+npm run build
+```
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The production build is written to `dist/` and deployed through Firebase Hosting.
