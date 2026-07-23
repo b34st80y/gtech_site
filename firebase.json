@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "build/web",
+    "public": "gtech-site-react/dist",
     "ignore": [
       "firebase.json",
       "**/.*",

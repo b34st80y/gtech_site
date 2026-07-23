@@ -33,6 +33,16 @@
 # Web related
 lib/generated_plugin_registrant.dart
 
+# Node/Vite related
+**/node_modules/
+**/dist/
+**/coverage/
+**/.vite/
+*.tsbuildinfo
+
+# Local Codex environment
+.codex/
+
 # Symbolication related
 app.*.symbols
 
