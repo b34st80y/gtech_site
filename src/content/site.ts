@@ -21,8 +21,8 @@ export const siteMeta: Record<string, SeoMeta> = {
     description: 'Explore GTech products for field operations, personal wardrobe planning, and practical fitness tracking.',
   },
   closetApp: {
-    title: 'Closet App | GTech',
-    description: 'Closet App turns a photographed wardrobe into an organized, browsable closet with outfit planning tools.',
+    title: 'Closet AI | GTech',
+    description: 'Closet AI turns a photographed wardrobe into an organized, searchable closet with outfit planning tools.',
   },
   meegFitnessPal: {
     title: 'Meeg Fitness Pal | GTech',
@@ -91,17 +91,17 @@ export const portfolioProducts: PortfolioProduct[] = [
     visual: 'roof-manager',
   },
   {
-    name: 'Closet App',
-    href: '/products/closet-app',
+    name: 'Closet AI',
+    href: '/products/closet-ai',
     category: 'Wardrobe utility',
     headline: 'A personal wardrobe, organized and ready to wear.',
-    summary: 'A visual closet for capturing clothing, browsing a wardrobe by category, and making outfit planning easier.',
+    summary: 'A searchable wardrobe for capturing clothing, browsing by category, building outfits, and planning what to wear.',
     audience: 'Designed for anyone who wants a more useful view of what they own and a simpler way to decide what to wear.',
     features: [
       'Photograph and add clothing items to a personal digital wardrobe.',
-      'Organize clothes into categories and browse them in a visual closet.',
+      'Search and filter clothing across a visual wardrobe organized by category.',
       'Open item details and maintain the information attached to each piece.',
-      'Move from wardrobe browsing into outfit discovery and planning.',
+      'Build outfits and carry them into calendar-based planning.',
     ],
     visual: 'closet-app',
   },

@@ -22,7 +22,7 @@ describe('content integrity', () => {
     expect(roofManager.name).toBe('Roof Manager')
     expect(roofManager.workflows.length).toBeGreaterThanOrEqual(4)
     expectCta(roofManager.cta)
-    expect(portfolioProducts.map((product) => product.name)).toEqual(['Roof Manager', 'Closet App', 'Meeg Fitness Pal'])
+    expect(portfolioProducts.map((product) => product.name)).toEqual(['Roof Manager', 'Closet AI', 'Meeg Fitness Pal'])
     portfolioProducts.forEach((product) => {
       expect(product.features.length).toBeGreaterThanOrEqual(4)
       expect(product.href).toMatch(/^\/products\//)

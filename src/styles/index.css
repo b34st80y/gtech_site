@@ -31,6 +31,34 @@
   --color-accent-soft: 28 58 53;
 }
 
+.roof-preview {
+  --roof-frame: 238 241 244;
+  --roof-surface: 255 255 255;
+  --roof-rail: 248 248 248;
+  --roof-border: 226 232 240;
+  --roof-ink: 15 23 42;
+  --roof-muted: 100 116 139;
+  --roof-soft: 248 250 252;
+}
+
+:root[data-theme='dark'] .roof-preview {
+  --roof-frame: 8 10 12;
+  --roof-surface: 0 0 0;
+  --roof-rail: 0 0 0;
+  --roof-border: 47 51 54;
+  --roof-ink: 231 233 234;
+  --roof-muted: 113 118 123;
+  --roof-soft: 22 24 28;
+}
+
+:root[data-theme='dark'] .roof-preview-moon {
+  display: none;
+}
+
+:root[data-theme='dark'] .roof-preview-sun {
+  display: block;
+}
+
 * {
   box-sizing: border-box;
 }

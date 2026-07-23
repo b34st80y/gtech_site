@@ -19,7 +19,8 @@ export const AppRoutes = () => (
       <Route path="/products" element={<PortfolioPage />} />
       <Route path="/portfolio" element={<Navigate to="/products" replace />} />
       <Route path="/products/roof-manager" element={<RoofManagerPage />} />
-      <Route path="/products/closet-app" element={<AppProductPage product={closetApp} meta={siteMeta.closetApp} />} />
+      <Route path="/products/closet-ai" element={<AppProductPage product={closetApp} meta={siteMeta.closetApp} />} />
+      <Route path="/products/closet-app" element={<Navigate to="/products/closet-ai" replace />} />
       <Route path="/products/meeg-fitness-pal" element={<AppProductPage product={meegFitnessPal} meta={siteMeta.meegFitnessPal} />} />
       <Route path="/services" element={<ServicesPage />} />
       <Route path="/about" element={<AboutPage />} />

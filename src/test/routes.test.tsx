@@ -13,9 +13,9 @@ const renderRoute = (route: string) =>
 describe('public routes', () => {
   it.each([
     ['/', 'GTech', 'Start a conversation'],
-    ['/products', 'Software built around real, everyday decisions.', 'Closet App'],
+    ['/products', 'Software built around real, everyday decisions.', 'Closet AI'],
     ['/products/roof-manager', 'Roof Manager keeps roofing jobs organized from lead handoff to final payment.', 'Build a similar system'],
-    ['/products/closet-app', 'A personal wardrobe, organized and ready to wear.', 'Photograph and add clothing items to a personal digital wardrobe.'],
+    ['/products/closet-ai', 'A personal wardrobe, organized and ready to wear.', 'Photograph and add clothing items to a personal digital wardrobe.'],
     ['/products/meeg-fitness-pal', 'Daily fitness tracking without the drag.', 'Track daily calories and macros against personal targets.'],
     ['/services', 'Selective software build work for SMB operators.', 'Start a conversation'],
     ['/about', 'A new company identity for experienced software builders.', 'Start a conversation'],
