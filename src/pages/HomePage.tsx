@@ -38,8 +38,8 @@ export const HomePage = () => {
         <div className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <div>
-              <p className="text-sm font-bold uppercase tracking-[0.28em] text-accentDark">Featured products</p>
-              <h2 className="mt-4 max-w-3xl font-serif text-4xl font-semibold md:text-6xl">Purpose-built products for work and life.</h2>
+              <p className="text-sm font-bold uppercase tracking-[0.28em] text-accentDark">Products</p>
+              <h2 className="mt-4 max-w-3xl font-serif text-4xl font-semibold md:text-6xl">Three products. Three specific jobs.</h2>
             </div>
             <Link to="/products" className="font-semibold text-accentDark transition hover:text-ink">View all products</Link>
           </div>
@@ -52,7 +52,7 @@ export const HomePage = () => {
                   <h3 className="mt-2 font-serif text-3xl font-semibold">{product.name}</h3>
                   <p className="mt-3 leading-7 text-muted">{product.summary}</p>
                   <div className="mt-auto pt-5">
-                    <Link to={product.href} className="inline-flex border-b border-accentDark pb-1 font-semibold text-accentDark transition group-hover:border-accent group-hover:text-accent">Explore product</Link>
+                    <Link to={product.href} className="inline-flex border-b border-accentDark pb-1 font-semibold text-accentDark transition group-hover:border-accent group-hover:text-accent">View product</Link>
                   </div>
                 </div>
               </article>
@@ -64,8 +64,8 @@ export const HomePage = () => {
       <section className="bg-canvas">
         <div className="mx-auto grid max-w-7xl gap-10 px-5 py-20 lg:grid-cols-[0.85fr_1fr] lg:px-8">
           <div className="lg:sticky lg:top-28 lg:self-start">
-            <p className="text-sm font-bold uppercase tracking-[0.28em] text-accentDark">Flagship proof point</p>
-            <h2 className="mt-4 font-serif text-4xl font-semibold md:text-6xl">{roofManager.name}</h2>
+            <p className="text-sm font-bold uppercase tracking-[0.28em] text-accentDark">{roofManager.name}</p>
+            <h2 className="mt-4 font-serif text-4xl font-semibold md:text-6xl">Every job, document, and payment in one place.</h2>
             <p className="mt-5 text-lg leading-8 text-muted">{roofManager.summary}</p>
             <div className="mt-8">
               <CtaButton cta={{ label: 'Explore Roof Manager', href: roofManager.href, variant: 'secondary' }} />
@@ -84,12 +84,12 @@ export const HomePage = () => {
       <section className="bg-[#121e1c] text-white">
         <div className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
           <div className="max-w-3xl">
-            <p className="text-sm font-bold uppercase tracking-[0.28em] text-white/55">Why GTech exists</p>
+            <p className="text-sm font-bold uppercase tracking-[0.28em] text-white/55">How we build</p>
             <h2 className="mt-4 font-serif text-4xl font-semibold md:text-6xl">
-              Useful software for businesses that operate in the real world.
+              Good software should make the next step obvious.
             </h2>
             <p className="mt-6 text-lg leading-8 text-white/70">
-              GTech is a new company identity, but the work is grounded in experienced software building: understand the actual process, ship a durable first release, and keep the system easy to own.
+              We learn how the work gets done, build the smallest useful version, and keep the technology straightforward to maintain.
             </p>
           </div>
         </div>
@@ -99,8 +99,8 @@ export const HomePage = () => {
         <div className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <div>
-              <p className="text-sm font-bold uppercase tracking-[0.28em] text-accentDark">Selective services</p>
-              <h2 className="mt-4 font-serif text-4xl font-semibold md:text-5xl">Product work first. Services where they fit.</h2>
+              <p className="text-sm font-bold uppercase tracking-[0.28em] text-accentDark">Custom software</p>
+              <h2 className="mt-4 font-serif text-4xl font-semibold md:text-5xl">Need something more specific?</h2>
             </div>
             <Link to="/services" className="font-semibold text-accentDark transition hover:text-ink">
               View services
@@ -119,8 +119,8 @@ export const HomePage = () => {
 
       <section className="bg-canvas">
         <div className="mx-auto flex max-w-7xl flex-col gap-7 px-5 py-16 md:flex-row md:items-center md:justify-between lg:px-8">
-          <h2 className="max-w-2xl font-serif text-4xl font-semibold md:text-5xl">Have an operator workflow that needs its own system?</h2>
-          <CtaButton cta={homeHero.primaryCta} />
+          <h2 className="max-w-2xl font-serif text-4xl font-semibold md:text-5xl">Tell us what the software needs to do.</h2>
+          <CtaButton cta={{ label: 'Discuss a project', href: '/contact', variant: 'primary' }} />
         </div>
       </section>
     </>

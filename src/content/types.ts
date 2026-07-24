@@ -36,6 +36,7 @@ export interface PortfolioProduct {
   href: string
   category: string
   headline: string
+  detailHeading: string
   summary: string
   audience: string
   features: string[]

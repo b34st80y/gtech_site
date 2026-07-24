@@ -10,12 +10,12 @@ export const AppProductPage = ({ product, meta }: { product: PortfolioProduct; m
 
   return (
     <>
-      <PageHeader eyebrow={product.category} title={product.headline} body={product.summary} />
+      <PageHeader eyebrow={product.name} title={product.headline} body={product.summary} />
       <section className="bg-page">
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 lg:grid-cols-[0.72fr_1fr] lg:px-8">
           <div>
-            <p className="text-sm font-bold uppercase tracking-[0.28em] text-accentDark">Who it serves</p>
-            <h2 className="mt-4 font-serif text-4xl font-semibold">A focused product for a familiar daily challenge.</h2>
+            <p className="text-sm font-bold uppercase tracking-[0.28em] text-accentDark">{product.category}</p>
+            <h2 className="mt-4 font-serif text-4xl font-semibold">{product.detailHeading}</h2>
             <p className="mt-5 text-lg leading-8 text-muted">{product.audience}</p>
           </div>
           <ProductVisual visual={product.visual} />
@@ -35,8 +35,8 @@ export const AppProductPage = ({ product, meta }: { product: PortfolioProduct; m
       </section>
       <section className="bg-page">
         <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 px-5 py-16 md:flex-row md:items-center lg:px-8">
-          <h2 className="max-w-2xl font-serif text-4xl font-semibold md:text-5xl">Have a product idea with a real job to do?</h2>
-          <CtaButton cta={contactCta} />
+          <h2 className="max-w-2xl font-serif text-4xl font-semibold md:text-5xl">Questions about {product.name}?</h2>
+          <CtaButton cta={{ ...contactCta, label: 'Contact GTech' }} />
         </div>
       </section>
     </>

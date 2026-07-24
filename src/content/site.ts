@@ -9,53 +9,57 @@ export const navItems: NavItem[] = [
 
 export const siteMeta: Record<string, SeoMeta> = {
   home: {
-    title: 'GTech | Software Products for Operators',
-    description: 'GTech builds focused software products and selective custom systems for small business operators.',
+    title: 'GTech | Practical Software Products',
+    description: 'GTech builds software for roofing operations, wardrobe planning, nutrition tracking, and specific business needs.',
   },
   roofManager: {
     title: 'Roof Manager | GTech',
-    description: 'Roof Manager is GTech’s flagship operating system for roofing job lifecycle, documents, billing, and insurance work.',
+    description: 'Roof Manager keeps roofing jobs, customer records, documents, invoices, payments, and insurance contacts in one place.',
   },
   portfolio: {
     title: 'Software Products | GTech',
-    description: 'Explore GTech products for field operations, personal wardrobe planning, and practical fitness tracking.',
+    description: 'Explore software from GTech for roofing operations, wardrobe planning, and nutrition and fitness tracking.',
   },
   closetApp: {
     title: 'Closet AI | GTech',
-    description: 'Closet AI turns a photographed wardrobe into an organized, searchable closet with outfit planning tools.',
+    description: 'Closet AI helps you photograph and organize your clothes, build outfits, and plan what to wear.',
   },
   meegFitnessPal: {
     title: 'Meeg Fitness Pal | GTech',
-    description: 'Meeg Fitness Pal combines food, macro, exercise, weight, and streak tracking with faster AI-assisted logging.',
+    description: 'Meeg Fitness Pal tracks meals, macros, exercise, weight, and streaks, with optional AI-assisted food logging.',
   },
   services: {
     title: 'Services | GTech',
-    description: 'Selective software product and system build work for small and mid-sized business operators.',
+    description: 'GTech designs custom business software, replaces manual systems, and helps teams plan practical product releases.',
   },
   about: {
     title: 'About | GTech',
-    description: 'GTech is a new company identity built by experienced software builders focused on useful operator software.',
+    description: 'GTech builds practical software products and custom systems around clearly defined problems.',
   },
   contact: {
     title: 'Contact | GTech',
-    description: 'Contact GTech about software products, operator systems, and selective consulting work.',
+    description: 'Contact GTech about its software products or a custom software project.',
   },
 }
 
 export const contactCta: CtaLink = {
-  label: 'Start a conversation',
+  label: 'Contact GTech',
   href: '/contact',
   variant: 'primary',
 }
 
 export const homeHero: HeroContent = {
-  eyebrow: 'GTech software products',
-  title: 'Software that helps operators keep the work moving.',
-  body: 'GTech builds practical software products for small business workflows: the jobs, documents, handoffs, billing, and decisions that cannot live in a spreadsheet forever.',
-  primaryCta: contactCta,
+  eyebrow: 'Software by GTech',
+  title: 'Software for roofing operations, wardrobe planning, and daily fitness.',
+  body: 'Explore our products, or talk with us about software built for a specific business need.',
+  primaryCta: {
+    label: 'View products',
+    href: '/products',
+    variant: 'primary',
+  },
   secondaryCta: {
-    label: 'See Roof Manager',
-    href: '/products/roof-manager',
+    label: 'Discuss a project',
+    href: '/contact',
     variant: 'secondary',
   },
 }
@@ -63,17 +67,17 @@ export const homeHero: HeroContent = {
 export const roofManager: ProductSummary = {
   name: 'Roof Manager',
   href: '/products/roof-manager',
-  summary: 'A focused job operations system for roofing teams that need one place to track clients, job phases, documents, invoices, payments, and insurance contacts.',
-  audience: 'Built for residential roofing operators who need clearer handoffs from signed contract through build completion and final payment.',
+  summary: 'One place to manage roofing jobs, customer records, documents, invoices, payments, and insurance contacts.',
+  audience: 'For residential roofing teams that need a clear view of every job from signed contract through final payment.',
   workflows: [
-    'Lifecycle board for new jobs, signed contracts, insurance restoration, scheduled builds, invoicing, and completed work.',
-    'Client and job records with notes, contact information, location details, and active next actions.',
-    'Document composer for contracts and invoices with generated PDF output tied back to the job file.',
-    'Billing summaries, payment tracking, and balance visibility from the same operational view.',
-    'Insurance company and contact records for restoration jobs where approvals and adjuster communication matter.',
+    'See every job by stage, from new lead and signed contract to scheduled build, invoice, and completion.',
+    'Keep customer details, property information, notes, and next steps together.',
+    'Create contracts and invoices, generate PDFs, and save them to the job record.',
+    'Track invoice totals, payments, and outstanding balances without switching systems.',
+    'Keep insurance companies, adjusters, and approval details attached to restoration jobs.',
   ],
   cta: {
-    label: 'Build a similar system',
+    label: 'Discuss a custom system',
     href: '/contact',
     variant: 'primary',
   },
@@ -83,41 +87,44 @@ export const portfolioProducts: PortfolioProduct[] = [
   {
     name: 'Roof Manager',
     href: '/products/roof-manager',
-    category: 'Field operations',
-    headline: 'Keep every roofing job moving.',
-    summary: 'A focused operations system for job phases, client records, documents, billing, payments, and insurance work.',
-    audience: 'Built for residential roofing teams that need one reliable view from signed contract through final payment.',
+    category: 'Roofing operations',
+    headline: 'Run every roofing job from one place.',
+    detailHeading: 'Built for the handoffs that slow roofing teams down.',
+    summary: 'Manage job stages, customer records, documents, invoices, payments, and insurance contacts together.',
+    audience: 'For residential roofing teams that want one reliable view from signed contract through final payment.',
     features: roofManager.workflows,
     visual: 'roof-manager',
   },
   {
     name: 'Closet AI',
     href: '/products/closet-ai',
-    category: 'Wardrobe utility',
-    headline: 'A personal wardrobe, organized and ready to wear.',
-    summary: 'A searchable wardrobe for capturing clothing, browsing by category, building outfits, and planning what to wear.',
-    audience: 'Designed for anyone who wants a more useful view of what they own and a simpler way to decide what to wear.',
+    category: 'Wardrobe planning',
+    headline: 'Know what you own. Plan what to wear.',
+    detailHeading: 'Your wardrobe, searchable and ready to plan.',
+    summary: 'Photograph and organize your clothes, build outfits, and plan them on a calendar.',
+    audience: 'For anyone who wants to see their wardrobe clearly and spend less time deciding what to wear.',
     features: [
-      'Photograph and add clothing items to a personal digital wardrobe.',
-      'Search and filter clothing across a visual wardrobe organized by category.',
-      'Open item details and maintain the information attached to each piece.',
-      'Build outfits and carry them into calendar-based planning.',
+      'Photograph clothing and add it to your personal wardrobe.',
+      'Browse, search, and filter what you own by category.',
+      'Keep useful details with each item.',
+      'Build outfits and plan when to wear them on a calendar.',
     ],
     visual: 'closet-app',
   },
   {
     name: 'Meeg Fitness Pal',
     href: '/products/meeg-fitness-pal',
-    category: 'Health and fitness',
-    headline: 'Daily fitness tracking without the drag.',
-    summary: 'A personal nutrition and progress tracker for meals, macros, exercise, weight, streaks, and AI-assisted food logging.',
-    audience: 'Built for people who want the clarity of consistent tracking with fewer steps between eating, logging, and learning.',
+    category: 'Nutrition and fitness',
+    headline: 'Track what matters without making it a chore.',
+    detailHeading: 'A clearer picture of your day and your progress.',
+    summary: 'Log meals, macros, exercise, weight, and streaks, with AI assistance when you want it.',
+    audience: 'For people who want a clear record of their habits and progress without a complicated logging routine.',
     features: [
-      'Track daily calories and macros against personal targets.',
-      'Log meals, saved foods, saved meals, and exercise from one focused diary.',
-      'Analyze food from a description, a photo, or both, then review before logging.',
-      'Follow weight progress and diary streaks over time.',
-      'Export and import personal fitness data for greater ownership and portability.',
+      'Compare daily calories and macros with your personal targets.',
+      'Log meals, saved foods, saved meals, and exercise in one diary.',
+      'Estimate nutrition from a description, a photo, or both, then review it before saving.',
+      'Follow weight changes and logging streaks over time.',
+      'Import and export your data whenever you need it.',
     ],
     visual: 'meeg-fitness-pal',
   },
@@ -125,40 +132,34 @@ export const portfolioProducts: PortfolioProduct[] = [
 
 export const services: ServiceOffering[] = [
   {
-    title: 'Operator software products',
-    summary: 'Design and build focused web apps for business workflows that are too specific for off-the-shelf tools.',
-    fit: 'Best fit when the work has a repeatable process, clear users, and measurable operational friction.',
+    title: 'Custom business software',
+    summary: 'Design and build web applications for work that off-the-shelf software does not handle well.',
+    fit: 'A repeatable process, a clear group of users, and a problem worth removing.',
   },
   {
-    title: 'Workflow system rebuilds',
-    summary: 'Replace fragile spreadsheets, manual trackers, or half-finished internal tools with a clearer product foundation.',
-    fit: 'Best fit when the current system works only because one person knows how to hold it together.',
+    title: 'Internal tool rebuilds',
+    summary: 'Replace fragile spreadsheets, manual trackers, or unfinished tools with one dependable system.',
+    fit: 'A process that works today only because one person knows how to hold it together.',
   },
   {
-    title: 'Technical product consulting',
-    summary: 'Help owners and operators decide what to build, what to avoid, and how to sequence a practical first release.',
-    fit: 'Best fit before committing budget to a custom build or when an existing product needs sharper scope.',
+    title: 'Product planning',
+    summary: 'Decide what to build first, what can wait, and what should not be built at all.',
+    fit: 'A new idea that needs a realistic scope before design and development begin.',
   },
 ]
 
 export const contactMethods: ContactMethod[] = [
   {
-    label: 'Email',
+    label: 'Email GTech',
     value: 'hello@gtech.dev',
     href: 'mailto:hello@gtech.dev',
-    note: 'Best for product build inquiries and practical project context.',
-  },
-  {
-    label: 'Project brief',
-    value: 'Share the workflow you want to improve',
-    href: 'mailto:hello@gtech.dev?subject=GTech%20project%20brief',
-    note: 'A short note with the current process, users, and pain points is enough to start.',
+    note: 'Ask about a GTech product or tell us what you need new software to do.',
   },
 ]
 
 export const principles = [
-  'Build around the real operating workflow, not a generic software category.',
-  'Start with a small useful release before adding breadth.',
-  'Prefer clear data, clean handoffs, and durable maintenance over novelty.',
-  'Be honest about fit: not every business problem needs custom software.',
+  'Understand the work before writing the software.',
+  'Build the smallest version that solves the problem well.',
+  'Choose technology that will be straightforward to maintain.',
+  'Say so when custom software is not the right answer.',
 ]

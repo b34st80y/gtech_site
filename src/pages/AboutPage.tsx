@@ -9,29 +9,29 @@ export const AboutPage = () => {
     <>
       <PageHeader
         eyebrow="About GTech"
-        title="A new company identity for experienced software builders."
-        body="GTech is early. The name is new, the operating focus is deliberate, and the work is centered on building useful software products for real business workflows."
-        cta={contactCta}
+        title="We build software with a clear job to do."
+        body="GTech makes practical products and custom systems for problems that deserve a better tool."
+        cta={{ ...contactCta, label: 'Contact GTech' }}
       />
       <section className="bg-page">
         <div className="mx-auto grid max-w-7xl gap-10 px-5 py-20 lg:grid-cols-[0.7fr_1fr] lg:px-8">
           <div>
-            <p className="text-sm font-bold uppercase tracking-[0.28em] text-accentDark">Position</p>
-            <h2 className="mt-4 font-serif text-4xl font-semibold">Small by design. Product-minded from the start.</h2>
+            <p className="text-sm font-bold uppercase tracking-[0.28em] text-accentDark">What we do</p>
+            <h2 className="mt-4 font-serif text-4xl font-semibold">Products first. Custom work when the fit is right.</h2>
           </div>
           <div className="space-y-6 text-lg leading-8 text-muted">
             <p>
-              GTech is not presented as a mature agency with a large client roster. It is a focused company identity for software builders who know how to turn messy operational work into maintainable products.
+              Our products currently cover roofing operations, wardrobe planning, and nutrition and fitness tracking. Each one starts with a specific problem and stays focused on solving it well.
             </p>
             <p>
-              The current focus is narrow: build and prove software products, use Roof Manager as the flagship example, and take on selective service work only where the workflow and business need are clear.
+              We also build custom software when a business has outgrown spreadsheets, manual trackers, or generic tools. If a simpler solution already exists, we will say so.
             </p>
           </div>
         </div>
       </section>
       <section className="bg-canvas">
         <div className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
-          <p className="text-sm font-bold uppercase tracking-[0.28em] text-accentDark">Principles</p>
+          <p className="text-sm font-bold uppercase tracking-[0.28em] text-accentDark">How we work</p>
           <div className="mt-8 grid gap-x-10 md:grid-cols-2">
             {principles.map((principle) => (
               <div key={principle} className="border-t border-line py-7">

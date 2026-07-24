@@ -79,7 +79,7 @@ export const Layout = () => {
               <p className="text-2xl font-extrabold tracking-tight text-logoInk">GTech</p>
             </div>
             <p className="mt-3 max-w-xl text-sm leading-6 text-muted">
-              Software products and selective custom systems for operators who need cleaner workflow, documents, and decisions.
+              Practical software for roofing operations, wardrobe planning, fitness tracking, and specific business needs.
             </p>
           </div>
           <div className="flex flex-wrap gap-x-6 gap-y-3 md:justify-end">

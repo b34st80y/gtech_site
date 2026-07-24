@@ -12,14 +12,14 @@ const renderRoute = (route: string) =>
 
 describe('public routes', () => {
   it.each([
-    ['/', 'GTech', 'Start a conversation'],
-    ['/products', 'Software built around real, everyday decisions.', 'Closet AI'],
-    ['/products/roof-manager', 'Roof Manager keeps roofing jobs organized from lead handoff to final payment.', 'Build a similar system'],
-    ['/products/closet-ai', 'A personal wardrobe, organized and ready to wear.', 'Photograph and add clothing items to a personal digital wardrobe.'],
-    ['/products/meeg-fitness-pal', 'Daily fitness tracking without the drag.', 'Track daily calories and macros against personal targets.'],
-    ['/services', 'Selective software build work for SMB operators.', 'Start a conversation'],
-    ['/about', 'A new company identity for experienced software builders.', 'Start a conversation'],
-    ['/contact', 'Start with the workflow, not a form.', 'Email'],
+    ['/', 'GTech', 'Three products. Three specific jobs.'],
+    ['/products', 'Software with a clear job to do.', 'Closet AI'],
+    ['/products/roof-manager', 'Run every roofing job from one place.', 'Discuss Roof Manager'],
+    ['/products/closet-ai', 'Know what you own. Plan what to wear.', 'Photograph clothing and add it to your personal wardrobe.'],
+    ['/products/meeg-fitness-pal', 'Track what matters without making it a chore.', 'Compare daily calories and macros with your personal targets.'],
+    ['/services', 'Custom software for businesses with specific needs.', 'Discuss a project'],
+    ['/about', 'We build software with a clear job to do.', 'Contact GTech'],
+    ['/contact', 'Tell us what you need the software to do.', 'Email GTech'],
   ])('renders %s', (route, heading, expectedText) => {
     renderRoute(route)
 

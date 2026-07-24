@@ -10,9 +10,9 @@ export const PortfolioPage = () => {
   return (
     <>
       <PageHeader
-        eyebrow="GTech products"
-        title="Software built around real, everyday decisions."
-        body="Three products, each focused on making a specific kind of work easier to see, manage, and move forward."
+        eyebrow="Products"
+        title="Software with a clear job to do."
+        body="GTech products help roofing teams manage jobs, people organize what they wear, and individuals track nutrition and fitness."
       />
       <section className="bg-page">
         <div className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
@@ -25,7 +25,7 @@ export const PortfolioPage = () => {
                   <p className="mt-4 text-2xl font-semibold leading-tight">{product.headline}</p>
                   <p className="mt-5 max-w-xl text-lg leading-8 text-muted">{product.summary}</p>
                   <Link to={product.href} className="mt-7 inline-flex border-b border-accentDark pb-1 font-semibold text-accentDark transition hover:border-accent hover:text-accent">
-                    View product story
+                    View product
                   </Link>
                 </div>
                 <div className={index % 2 === 1 ? 'lg:order-1' : ''}>

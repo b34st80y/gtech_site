@@ -10,11 +10,11 @@ export const ContactPage = () => {
     <>
       <PageHeader
         eyebrow="Contact"
-        title="Start with the workflow, not a form."
-        body="GTech v1 uses static contact methods only. Send a concise note about the business process, who uses it, and what breaks down today."
+        title="Tell us what you need the software to do."
+        body="Ask about a GTech product or send a short description of the problem, who it affects, and what you use today."
       />
       <section className="bg-page">
-        <div className="mx-auto grid max-w-7xl gap-5 px-5 py-20 md:grid-cols-2 lg:px-8">
+        <div className="mx-auto max-w-3xl px-5 py-20 lg:px-8">
           {contactMethods.map((method) => (
             <a
               key={method.label}
